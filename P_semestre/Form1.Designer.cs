@@ -79,15 +79,15 @@
             splitContainer1.Panel2.Controls.Add(monthCalendar1);
             splitContainer1.Panel2.Controls.Add(textBox1);
             splitContainer1.Panel2.Paint += splitContainer1_Panel2_Paint;
-            splitContainer1.Size = new Size(776, 435);
-            splitContainer1.SplitterDistance = 258;
+            splitContainer1.Size = new Size(749, 395);
+            splitContainer1.SplitterDistance = 199;
             splitContainer1.TabIndex = 2;
             // 
             // button1
             // 
-            button1.Location = new Point(39, 101);
+            button1.Location = new Point(43, 38);
             button1.Name = "button1";
-            button1.Size = new Size(176, 23);
+            button1.Size = new Size(106, 23);
             button1.TabIndex = 0;
             button1.Text = "EVENTOS ";
             button1.UseVisualStyleBackColor = true;
@@ -95,21 +95,23 @@
             // 
             // button2
             // 
-            button2.Location = new Point(39, 151);
+            button2.Location = new Point(43, 77);
             button2.Name = "button2";
-            button2.Size = new Size(176, 23);
+            button2.Size = new Size(106, 23);
             button2.TabIndex = 0;
-            button2.Text = "button1";
+            button2.Text = "MATERIAS\r\n";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
-            button3.Location = new Point(39, 196);
+            button3.Location = new Point(43, 117);
             button3.Name = "button3";
-            button3.Size = new Size(176, 23);
+            button3.Size = new Size(106, 23);
             button3.TabIndex = 0;
-            button3.Text = "button1";
+            button3.Text = "HORARIOS";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // label1
             // 
@@ -135,7 +137,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(779, 427);
             Controls.Add(splitContainer1);
             Name = "Form1";
             Text = "HOME";
