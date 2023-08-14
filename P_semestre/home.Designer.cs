@@ -1,6 +1,6 @@
 ﻿namespace P_semestre
 {
-    partial class Form1
+    partial class home
     {
         /// <summary>
         ///  Required designer variable.
@@ -31,16 +31,18 @@
             monthCalendar1 = new MonthCalendar();
             textBox1 = new TextBox();
             splitContainer1 = new SplitContainer();
-            button1 = new Button();
-            button2 = new Button();
             button3 = new Button();
-            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            label1 = new Label();
+            button2 = new Button();
+            button1 = new Button();
             label2 = new Label();
+            label1 = new Label();
+            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
             splitContainer1.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // monthCalendar1
@@ -67,9 +69,7 @@
             // 
             // splitContainer1.Panel1
             // 
-            splitContainer1.Panel1.Controls.Add(button3);
-            splitContainer1.Panel1.Controls.Add(button2);
-            splitContainer1.Panel1.Controls.Add(button1);
+            splitContainer1.Panel1.Controls.Add(panel1);
             splitContainer1.Panel1.Paint += splitContainer1_Panel1_Paint;
             // 
             // splitContainer1.Panel2
@@ -83,29 +83,9 @@
             splitContainer1.SplitterDistance = 199;
             splitContainer1.TabIndex = 2;
             // 
-            // button1
-            // 
-            button1.Location = new Point(43, 38);
-            button1.Name = "button1";
-            button1.Size = new Size(106, 23);
-            button1.TabIndex = 0;
-            button1.Text = "EVENTOS ";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(43, 77);
-            button2.Name = "button2";
-            button2.Size = new Size(106, 23);
-            button2.TabIndex = 0;
-            button2.Text = "MATERIAS\r\n";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
-            // 
             // button3
             // 
-            button3.Location = new Point(43, 117);
+            button3.Location = new Point(18, 99);
             button3.Name = "button3";
             button3.Size = new Size(106, 23);
             button3.TabIndex = 0;
@@ -113,15 +93,25 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
-            // label1
+            // button2
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(142, 317);
-            label1.Name = "label1";
-            label1.Size = new Size(104, 15);
-            label1.TabIndex = 2;
-            label1.Text = "Detalle del evento ";
-            label1.Click += label1_Click;
+            button2.Location = new Point(18, 59);
+            button2.Name = "button2";
+            button2.Size = new Size(106, 23);
+            button2.TabIndex = 0;
+            button2.Text = "MATERIAS\r\n";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(18, 20);
+            button1.Name = "button1";
+            button1.Size = new Size(106, 23);
+            button1.TabIndex = 0;
+            button1.Text = "EVENTOS ";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label2
             // 
@@ -133,13 +123,33 @@
             label2.Text = "Buscar Evento :";
             label2.Click += label1_Click;
             // 
-            // Form1
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(142, 317);
+            label1.Name = "label1";
+            label1.Size = new Size(104, 15);
+            label1.TabIndex = 2;
+            label1.Text = "Detalle del evento ";
+            label1.Click += label1_Click;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(button2);
+            panel1.Controls.Add(button3);
+            panel1.Controls.Add(button1);
+            panel1.Location = new Point(27, 38);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(142, 147);
+            panel1.TabIndex = 1;
+            // 
+            // home
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(779, 427);
             Controls.Add(splitContainer1);
-            Name = "Form1";
+            Name = "home";
             Text = "HOME";
             Load += Form1_Load;
             splitContainer1.Panel1.ResumeLayout(false);
@@ -147,6 +157,7 @@
             splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
             splitContainer1.ResumeLayout(false);
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -160,5 +171,6 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Label label1;
         private Label label2;
+        private Panel panel1;
     }
 }

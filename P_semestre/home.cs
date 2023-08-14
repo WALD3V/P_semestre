@@ -1,8 +1,8 @@
 namespace P_semestre
 {
-    public partial class Form1 : Form
+    public partial class home : Form
     {
-        public Form1()
+        public home()
         {
             InitializeComponent();
         }
